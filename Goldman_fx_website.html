@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldman FX Trading Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0e0e0e; /* Dark theme background */
+            color: #ffffff;
+        }
+        .text-gf-primary { color: #FFC300; /* Gold/Amber */ }
+        .bg-gf-primary { background-color: #FFC300; }
+        .bg-gf-secondary { background-color: #1a1a1a; }
+        .shadow-gf { box-shadow: 0 10px 20px rgba(255, 195, 0, 0.1); }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('https://placehold.co/1200x600/1a1a1a/FFC300?text=Financial+Chart+Background');
+            background-size: cover;
+            background-position: center;
+        }
+        .logo-filter {
+            /* Adding a subtle glow/shadow to the logo to make it pop on the dark background */
+            filter: drop-shadow(0 0 5px rgba(255, 195, 0, 0.8));
+        }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'gf-dark': '#0e0e0e',
+              'gf-gold': '#FFC300',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+
+<!-- Header/Navigation -->
+<header class="bg-gf-secondary shadow-gf sticky top-0 z-10 border-b border-gf-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+        <!-- Logo Integration: Goldman Analyst Logo -->
+        <a href="#home" class="flex items-center space-x-3">
+            <img src="1000560820.png" alt="Goldman FX Logo" class="h-10 w-auto rounded-lg logo-filter">
+            <span class="text-2xl font-extrabold text-gf-primary hidden sm:inline">Goldman FX Academy</span>
+        </a>
+        
+        <!-- Navigation Links -->
+        <nav class="space-x-4 flex items-center text-sm font-semibold">
+            <a href="#courses" class="text-gray-300 hover:text-gf-primary transition duration-300">Courses</a>
+            <a href="#mentorship" class="text-gray-300 hover:text-gf-primary transition duration-300">Mentorship</a>
+            <a href="#contact" class="bg-gf-primary text-gf-dark py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300 shadow-lg">
+                Enroll Today
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center">
+        <div class="max-w-4xl px-6">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4">
+                Trade with Confidence. <span class="text-gf-primary">Achieve Financial Freedom.</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8">
+                The leading educational platform for mastering Forex trading, technical analysis, and risk management.
+            </p>
+            <a href="#courses" class="inline-block bg-gf-primary text-gf-dark font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-400 transition duration-300 transform hover:scale-105">
+                Explore Courses
+            </a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 md:py-24 bg-gf-secondary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gf-primary mb-12">Our Proven Curriculum</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Course 1: Foundations -->
+                <div class="p-6 rounded-xl bg-gray-900 border border-gf-dark hover:border-gf-primary transition duration-300 shadow-gf">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                    <h3 class="text-xl font-bold text-white mb-3">FX Fundamentals</h3>
+                    <p class="text-gray-400 text-sm">Understand market structure, terminology, and how to operate within major trading sessions.</p>
+                </div>
+                
+                <!-- Course 2: Advanced Analysis -->
+                <div class="p-6 rounded-xl bg-gray-900 border border-gf-dark hover:border-gf-primary transition duration-300 shadow-gf">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+                    <h3 class="text-xl font-bold text-white mb-3">Technical Mastery</h3>
+                    <p class="text-gray-400 text-sm">Deep dive into candlestick patterns, indicators, and advanced chart reading techniques.</p>
+                </div>
+
+                <!-- Course 3: Strategy & Risk -->
+                <div class="p-6 rounded-xl bg-gray-900 border border-gf-dark hover:border-gf-primary transition duration-300 shadow-gf">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4"><path d="M6 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"></path><path d="M6 14H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2"></path></svg>
+                    <h3 class="text-xl font-bold text-white mb-3">Risk Management</h3>
+                    <p class="text-gray-400 text-sm">Build robust trading plans, calculate position sizes, and protect capital like a professional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentorship" class="py-16 md:py-24 bg-gf-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Personalized Mentorship Program</h2>
+                <p class="text-lg mb-4 text-gray-300">
+                    Our elite 1-on-1 mentorship connects you directly with our senior traders. Receive personal strategy reviews, real-time trade execution feedback, and psychological support to overcome trading challenges.
+                </p>
+                <p class="text-lg text-gray-300">
+                    This program is designed for serious traders ready to accelerate their learning curve and achieve consistent profitability in the Forex market.
+                </p>
+                <a href="#contact" class="mt-6 inline-block bg-gf-primary text-gf-dark font-bold py-3 px-6 rounded-full hover:bg-yellow-400 transition duration-300">
+                    Apply for Mentorship
+                </a>
+            </div>
+            
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/FFC300/000000?text=Expert+Mentor" alt="Expert mentor discussing trading strategy" class="rounded-xl shadow-gf w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Enrollment CTA -->
+    <section id="contact" class="py-16 md:py-24 bg-gf-secondary text-center">
+        <div class="max-w-xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gf-primary mb-4">Invest in Your Trading Future</h2>
+            <p class="text-lg text-gray-400 mb-8">
+                Ready to stop guessing and start profiting? Contact us to discuss the best path for your trading goals.
+            </p>
+            
+            <a href="mailto:info@goldmanfx.com" class="inline-block bg-gf-primary text-gf-dark font-bold py-4 px-10 rounded-full hover:bg-yellow-400 transition duration-300 shadow-xl transform hover:scale-105">
+                Contact Our Admissions Team
+            </a>
+            <p class="text-sm text-gray-500 mt-6">Email: info@goldmanfx.com (Mock)</p>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gf-dark text-white py-10 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <p class="text-sm text-gray-500">&copy; 2024 Goldman FX Trading Academy. All rights reserved.</p>
+        <p class="text-xs text-gray-600 mt-2">Disclaimer: Trading involves significant risk and is not suitable for all investors.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+

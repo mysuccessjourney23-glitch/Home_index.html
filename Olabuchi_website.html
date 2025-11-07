@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olabuchi Electrical Enterprises (OEE) - Powering Tomorrow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f9; /* Very light background */
+        }
+        .hero-bg {
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x600/003366/ffffff?text=OEE+Electrical+Solutions');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-oee-primary { color: #FFD700; /* Gold */ }
+        .bg-oee-secondary { background-color: #003366; /* Deep Blue */ }
+        .border-oee-primary { border-color: #FFD700; }
+        .shadow-oee { box-shadow: 0 10px 15px -3px rgba(0, 51, 102, 0.2), 0 4px 6px -2px rgba(0, 51, 102, 0.1); }
+        /* Custom pulsing animation for the "Call Now" button */
+        @keyframes pulse-call {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 5px rgba(255, 215, 0, 0.4); }
+        }
+        .pulse-call-btn {
+            animation: pulse-call 1.5s infinite;
+        }
+    </style>
+    <!-- Lucide icons included via script for modern, lightweight icons -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'oee-blue': '#003366',
+              'oee-gold': '#FFD700',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+
+<!-- Header/Navigation -->
+<header class="bg-oee-secondary text-white shadow-oee sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <!-- Logo: OEE Sun Logo -->
+        <a href="#home" class="flex items-center space-x-3">
+            <img src="1000673397.png" alt="Olabuchi Electrical Enterprises Logo" class="h-10 w-auto bg-white p-1 rounded-lg">
+            <span class="text-xl font-bold tracking-wider text-oee-primary hidden sm:inline">O.E.E.</span>
+        </a>
+        
+        <!-- Mobile Menu Toggle (Simplified for single-file HTML) -->
+        <div class="flex items-center space-x-4">
+            <a href="tel:07062613125" class="text-sm font-semibold hover:text-oee-gold transition duration-300">
+                Call: 07062613125
+            </a>
+            <!-- Simple menu links for internal sections -->
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="#services" class="hover:text-oee-primary transition duration-300">Services</a>
+                <a href="#about" class="hover:text-oee-primary transition duration-300">About</a>
+                <a href="#contact" class="hover:text-oee-primary transition duration-300">Contact</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
+        <div class="max-w-4xl px-6">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4">
+                Powering Your World, <span class="text-oee-primary">Reliably.</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-8">
+                **Olabuchi Electrical Enterprises**: Your trusted partner for industrial, commercial, and residential electrical engineering solutions.
+            </p>
+            <a href="#contact" class="inline-block bg-oee-gold text-oee-blue font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-300 transition duration-300 pulse-call-btn">
+                Get a Free Quote Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-oee-blue text-center mb-12">Our Core Services</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Card 1: Industrial Wiring -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-t-4 border-oee-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    <h3 class="text-xl font-bold text-oee-blue mb-3">Industrial Solutions</h3>
+                    <p class="text-gray-600">Specialized installation and maintenance of heavy-duty industrial machinery, control systems, and complex three-phase power setups.</p>
+                </div>
+                
+                <!-- Service Card 2: Commercial & Residential Wiring -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-t-4 border-oee-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><path d="M12 22V8"></path><path d="M5 15H19"></path><path d="M5 5H19"></path><path d="M12 2L12 8"></path><path d="M12 15L12 22"></path><path d="M12 8L12 15"></path></svg>
+                    <h3 class="text-xl font-bold text-oee-blue mb-3">Commercial & Home Wiring</h3>
+                    <p class="text-gray-600">Safe, efficient, and compliant wiring for new buildings, renovations, lighting systems, and comprehensive power distribution.</p>
+                </div>
+
+                <!-- Service Card 3: Maintenance & Repair -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-t-4 border-oee-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                    <h3 class="text-xl font-bold text-oee-blue mb-3">Emergency & Diagnostics</h3>
+                    <p class="text-gray-600">24/7 emergency repair services, fault finding, diagnostics, and preventative maintenance to minimize downtime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-oee-secondary text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/FFD700/003366?text=OEE+Engineer+on+Site" alt="OEE Engineer on site" class="rounded-xl shadow-oee w-full h-auto object-cover">
+            </div>
+
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-oee-primary mb-6">Committed to Safety and Quality</h2>
+                <p class="text-lg mb-4 text-gray-200">
+                    Founded on the principles of integrity and excellence, **Olabuchi Electrical Enterprises** delivers electrical solutions that stand the test of time. We believe in getting the job done right the first time, every time, adhering strictly to local and international safety standards.
+                </p>
+                <p class="text-lg text-gray-200">
+                    Our team is composed of certified, highly experienced engineers dedicated to efficient and reliable service, whether it’s a simple residential repair or a complex industrial installation.
+                </p>
+                <a href="#contact" class="mt-6 inline-block bg-white text-oee-blue font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+                    Meet Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-oee-blue mb-4">Ready to Start Your Project?</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Get in touch with us today for a consultation or emergency support. We're here to help.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
+                <!-- Contact Info: Phone -->
+                <div class="p-6 rounded-xl bg-oee-blue text-white w-full md:w-1/3 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.08 2h3a2 2 0 0 1 2 1.72 17.5 17.5 0 0 0 .58 4.79A2 2 0 0 1 7.5 10c-1.33 1-3 2-4.5 3.5"></path></svg>
+                    <p class="font-bold text-lg">Call Us</p>
+                    <a href="tel:07062613125" class="text-oee-primary text-xl font-semibold">07062613125</a>
+                </div>
+
+                <!-- Contact Info: Email (Placeholder) -->
+                <div class="p-6 rounded-xl bg-gray-100 w-full md:w-1/3 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-3"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    <p class="font-bold text-lg text-oee-blue">Email Us</p>
+                    <a href="mailto:info@oee.com" class="text-gray-700 text-sm">info@oee.com (Mock)</a>
+                </div>
+            </div>
+            
+            <!-- Contact Form (Simple Placeholder) -->
+            <form action="#" method="POST" class="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-oee-gold">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Your Name" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-oee-blue focus:ring-oee-blue transition">
+                    <input type="email" placeholder="Your Email" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-oee-blue focus:ring-oee-blue transition">
+                </div>
+                <input type="tel" placeholder="Your Phone Number" class="w-full p-3 border border-gray-300 rounded-lg mt-6 focus:border-oee-blue focus:ring-oee-blue transition">
+                <textarea placeholder="Tell us about your electrical needs..." rows="4" required class="w-full p-3 border border-gray-300 rounded-lg mt-6 focus:border-oee-blue focus:ring-oee-blue transition"></textarea>
+                <button type="submit" class="mt-6 w-full md:w-1/2 bg-oee-gold text-oee-blue font-bold py-3 rounded-full hover:bg-yellow-300 transition duration-300 shadow-md">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-oee-blue text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <p class="text-xl font-bold text-oee-primary mb-4">Olabuchi Electrical Enterprises</p>
+        <p class="text-sm text-gray-300 mb-4">Committed to Quality Electrical Engineering Solutions.</p>
+
+        <!-- Updated Social Links -->
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://x.com/clementsuc9881" target="_blank" class="text-white hover:text-oee-primary transition duration-300" aria-label="X/Twitter">
+                <!-- X Icon (Simplified SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M18.244 2.25h3.308l-7.227 8.25-10.435-8.25H1l7.81 9.423L1.11 21.75h3.308l6.114-7.391 8.878 7.391h3.308l-8.682-10.983L18.244 2.25zM14.07 15.6l-.16.14-.946.866-2.583 2.502H10.1L4.4 3.75h2.957l6.83 8.32 1.48.06.945-.866L18 3.75h3.6l-8.3 9.99z"/></svg>
+            </a>
+            <a href="#" class="text-white hover:text-oee-primary transition duration-300" aria-label="Facebook">
+                <!-- Facebook Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+        </div>
+        
+        <p class="text-xs text-gray-400">&copy; 2024 **Olabuchi Electrical Enterprises**. All rights reserved.</p>
+        <p class="text-xs text-gray-400 mt-1">Contact: **07062613125**</p>
+    </div>
+</footer>
+
+</body>
+</html>
+

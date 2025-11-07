@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowered Entrepreneur - Build Your Legacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+        .text-ee-primary { color: #8B5CF6; /* Violet-500 */ }
+        .bg-ee-primary { background-color: #8B5CF6; }
+        .bg-ee-secondary { background-color: #1F2937; /* Dark Gray */ }
+        .shadow-ee { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); }
+        .logo-filter { 
+            /* Added margin and shadow for the colorful E logo */
+            filter: drop-shadow(0 0 5px rgba(139, 92, 246, 0.7)); 
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://placehold.co/1200x600/1F2937/ffffff?text=Entrepreneur+Success');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'ee-violet': '#8B5CF6',
+              'ee-dark': '#1F2937',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+
+<!-- Header/Navigation -->
+<header class="bg-white shadow-ee sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+        <!-- Logo: Using the colorful 'E' logo from your uploads -->
+        <a href="#home" class="flex items-center space-x-3">
+            <img src="1000523426.jpg" alt="Empowered Entrepreneur Logo" class="h-10 w-auto logo-filter rounded-lg">
+            <span class="text-2xl font-extrabold text-ee-dark hidden sm:inline">Empowered Entrepreneur</span>
+        </a>
+        
+        <!-- Navigation Links -->
+        <nav class="space-x-4 flex items-center text-sm font-semibold">
+            <a href="#mission" class="text-gray-600 hover:text-ee-primary transition duration-300">Mission</a>
+            <a href="#resources" class="text-gray-600 hover:text-ee-primary transition duration-300">Resources</a>
+            <a href="#contact" class="bg-ee-primary text-white py-2 px-4 rounded-full hover:bg-violet-600 transition duration-300 shadow-lg">
+                Join Us
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-[70vh] flex items-center justify-center text-center">
+        <div class="max-w-4xl px-6">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4">
+                Unlock Your Potential: <span class="text-ee-primary">The Future is Yours.</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-8">
+                Providing the knowledge, tools, and community you need to build a successful and sustainable business.
+            </p>
+            <a href="#contact" class="inline-block bg-ee-primary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-violet-600 transition duration-300 transform hover:scale-105">
+                Start Your Journey
+            </a>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ee-dark mb-4">Our Core Mission</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                We bridge the gap between brilliant ideas and real-world success by offering mentorship, strategic insights, and practical frameworks for the modern entrepreneur.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value Card 1: Education -->
+                <div class="p-6 rounded-xl border border-ee-primary bg-violet-50 hover:bg-violet-100 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4"><path d="M4 19.5V10c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v9.5"></path><path d="M22 19.5H2"></path><path d="M15 8l-3-6-3 6"></path></svg>
+                    <h3 class="text-xl font-bold text-ee-dark mb-3">Strategic Education</h3>
+                    <p class="text-gray-700">Access exclusive courses and workshops on finance, marketing, and leadership tailored for rapid business growth.</p>
+                </div>
+                
+                <!-- Value Card 2: Mentorship -->
+                <div class="p-6 rounded-xl border border-ee-primary bg-violet-50 hover:bg-violet-100 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4"><path d="M14 2c4.14 0 7.5 3.36 7.5 7.5S18.14 17 14 17h-2v4c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2v-4H4c-4.14 0-7.5-3.36-7.5-7.5S-.14 2 4 2h10z"></path></svg>
+                    <h3 class="text-xl font-bold text-ee-dark mb-3">1-on-1 Mentorship</h3>
+                    <p class="text-gray-700">Connect with industry leaders and seasoned experts for personalized advice and accountability sessions.</p>
+                </div>
+
+                <!-- Value Card 3: Community -->
+                <div class="p-6 rounded-xl border border-ee-primary bg-violet-50 hover:bg-violet-100 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <h3 class="text-xl font-bold text-ee-dark mb-3">Networking Community</h3>
+                    <p class="text-gray-700">Join a vibrant global community of motivated entrepreneurs for collaboration and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 md:py-24 bg-ee-secondary text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ee-primary text-center mb-12">Featured Resources</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Resource 1 -->
+                <div class="bg-gray-800 p-5 rounded-lg shadow-xl hover:bg-gray-700 transition duration-300">
+                    <h4 class="font-bold text-lg mb-2 text-ee-primary">Business Plan Template</h4>
+                    <p class="text-gray-400 text-sm">Download our comprehensive template to structure your startup from the ground up.</p>
+                </div>
+                <!-- Resource 2 -->
+                <div class="bg-gray-800 p-5 rounded-lg shadow-xl hover:bg-gray-700 transition duration-300">
+                    <h4 class="font-bold text-lg mb-2 text-ee-primary">Financial Forecasting Guide</h4>
+                    <p class="text-gray-400 text-sm">Master the art of projections and secure funding with confidence.</p>
+                </div>
+                <!-- Resource 3 -->
+                <div class="bg-gray-800 p-5 rounded-lg shadow-xl hover:bg-gray-700 transition duration-300">
+                    <h4 class="font-bold text-lg mb-2 text-ee-primary">Digital Marketing Checklist</h4>
+                    <p class="text-gray-400 text-sm">Ensure your online presence is optimized for maximum conversion.</p>
+                </div>
+                <!-- Resource 4 -->
+                <div class="bg-gray-800 p-5 rounded-lg shadow-xl hover:bg-gray-700 transition duration-300">
+                    <h4 class="font-bold text-lg mb-2 text-ee-primary">Productivity Hack E-book</h4>
+                    <p class="text-gray-400 text-sm">Learn how to manage your time and scale your efforts without burnout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA/Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white text-center">
+        <div class="max-w-xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ee-dark mb-4">Ready to Be Empowered?</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Sign up today to receive our weekly newsletter, access free resources, and connect with the community.
+            </p>
+            
+            <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                <input type="email" placeholder="Enter your best email..." required class="flex-grow p-4 border-2 border-gray-300 rounded-xl focus:border-ee-primary focus:ring-ee-primary transition">
+                <button type="submit" class="bg-ee-primary text-white font-bold py-4 px-8 rounded-xl hover:bg-violet-600 transition duration-300 transform hover:scale-105 shadow-md">
+                    Subscribe Now
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-ee-dark text-white py-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
+        <p class="text-sm text-gray-400">&copy; 2024 Empowered Entrepreneur. All rights reserved.</p>
+        <div class="flex justify-center sm:justify-end space-x-6 mt-4 sm:mt-0">
+            <a href="#" class="text-gray-400 hover:text-ee-primary transition duration-300 text-sm">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-ee-primary transition duration-300 text-sm">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
